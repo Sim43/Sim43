@@ -14,6 +14,6 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sim43&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Sim43&icon=0&color=0)](https://visitcount.itsvg.in)
+![Visitors](https://shields.io/badge/dynamic/json?url=https://api.countapi.xyz/hit/yourusername/yourrepo&label=Visitors)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
