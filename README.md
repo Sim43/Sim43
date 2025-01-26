@@ -14,6 +14,6 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sim43&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
-![Visitors](https://shields.io/badge/dynamic/json?url=https://api.countapi.xyz/hit/yourusername/yourrepo&label=Visitors)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Sim43/your-repo&title=Visitors)](https://hits.seeyoufarm.com)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
