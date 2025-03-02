@@ -1,0 +1,206 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* General body adjustments to prevent horizontal scrolling */
+  body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+  /* Adjusting the profile section */
+  #profile {
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 0; /* Remove bottom margin */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Ensure it takes full width */
+    padding: 0 1rem; /* Add padding to prevent content from touching edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .section__pic-container {
+    margin-top: 100px;
+    width: 200px; /* Reduce width for mobile */
+    height: 200px; /* Allow height to adjust based on content */
+    max-width: 300px; /* Set a maximum width for the image */
+    /* margin: 0 auto;  */
+  }
+
+  #about{
+    margin-top: -20px;
+  }
+
+  .about-pic{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjusting contact section to prevent horizontal scrolling */
+  #contact {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    padding: 1rem; /* Add padding for better spacing */
+    width: 100%; /* Ensure it takes full width */
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  .contact-info-upper-container {
+    width: 100%; /* Ensure it takes full width */
+    padding: 0.5rem; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: auto;
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    width: 100%; /* Ensure it takes full width */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 0; /* Remove margin to prevent overflow */
+  }
+
+  .contact-info-container p {
+    font-size: 1rem; /* Adjust font size for better readability */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjusting margins for the entire section */
+  section {
+    margin: 0 2%; /* Reduce margins for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .section__pic-container {
+    margin-bottom: 20px;
+  }
+
+  .about-details-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container {
+    padding: 0 10px;
+  }
+
+  .about-pic {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.project-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.details-container {
+  display: none; 
+}
+
+.details-container[style="display: flex;"] {
+  display: flex;
+}
+
+/* Full-screen bubble animation effect in the profile section */
+#profile {
+  position:relative; /* Ensure that bubbles are placed above the content */
+  overflow:visible; /* Prevent horizontal scrolling */
+}
+
+/* Container for the bubbles */
+.bubbles-container {
+  position: fixed; /* Absolute positioning to float over content */
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Make sure bubbles don't block interactions */
+  z-index: -1; /* Place bubbles behind the content */
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    /* transform: translateY(-200px) scale(0.5);   */
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-900px) scale(1);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: bubble 15s infinite ease-in-out;
+}
+
+.bubble:nth-child(odd) {
+  animation-duration: 7s; /* Vary animation duration for randomness */
+}
+
+.bubble:nth-child(even) {
+  animation-duration: 5s;
+}
+

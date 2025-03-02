@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Asim Khan</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+  </head>
+<!-- ########################################################################        BODY         ################################################################################# -->
+  <body>
+    <nav id="desktop-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 100; height: 7vh;">
+      <div class="logo">Muhammad Asim Khan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Home</a></li>
+          
+          <li><a href="education.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Education</a></li>
+          
+          <li><a href="projects.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Projects</a></li>
+          
+          <li><a href="experience.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Experience</a></li>
+          
+          <li><a href="publications.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Publications</a></li>
+          
+          <li><a href="contact.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Contact</a></li>
+        </ul> 
+      </div>
+    </nav>
+    <nav id="hamburger-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 1000; height: 7vh;">
+      <div class="logo" style="font-size: medium;">Muhammad Asim Khan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Home</a></li>
+          <li><a href="education.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Education</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Projects</a></li>
+          <li><a href="experience.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Experience</a></li>
+          <li><a href="publications.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Publications</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- <div id="news-bar" style="background-color: lightgrey; color: #000; position: fixed; top: 7vh; width: 100%; z-index: 100; height: 3vh; text-align: center; font-size: 16px; overflow: hidden;">
+      <p><strong>Latest Update:</strong> Conference paper "Assistive Feeding System: Design and Evaluation" accepted to International Conference of Robotics and Automation in Industry (ICRAI) 2024</p>
+    </div> -->
+<!-- ########################################################################        Experience         ################################################################################### -->
+    <section id="experience">
+      <div style="margin-top: 120px;">
+        <h1 class="title">Experience</h1>
+        <p class="section__text__p1">Every experience, good or bad, is a priceless collector's item.</p>
+      </div>
+      <div class="experience-details-container" style="display: flex; flex-direction: column; gap: 20px;">
+        
+        
+        <div class="about-containers">
+          <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.foretheta.com/" target="_blank">
+              <img src="./assets/images/foretheta.png" alt="Foretheta" class="icon" style="height: 45px;" />
+            </a>
+            <h2 class="experience-sub-title" style="margin-bottom: 0;">Intern, Data Science</h2>
+            <p style="margin-top: 0;">[Feb 25 - Present]</p>
+            <ul style="margin-top: 20px; max-width: 75%; list-style: disc;">
+              <li style="text-align: left;">Performed comprehensive data preprocessing, including cleaning, normalization, and feature engineering, to enhance data quality.</li>
+              <li style="text-align: left;">Integrated <strong>LLM APIs</strong> and developed custom prompts to automate insights generation, improving analysis efficiency by <strong>30%</strong>.</li>
+              <li style="text-align: left;">Collaborated with backend developers to integrate machine learning models into production using <strong>Python</strong> and <strong>RESTful APIs</strong>.</li>
+              <li style="text-align: left;">Refactored backend codebase, optimizing API response times and achieving a <strong>50%</strong> reduction in latency.</li>
+              <li style="text-align: left;">Enhanced data pipelines and automated workflows, leading to a <strong>20%</strong> increase in data processing speed.</li>
+            </ul>            
+          </div>
+        </div>
+        
+        
+        <div class="about-containers">
+          <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.freelancer.com" target="_blank">
+              <img src="./assets/images/freelancer.png" alt="Freelancer" class="icon" style="height: 45px;" />
+            </a>
+            <h2 class="experience-sub-title" style="margin-bottom: 0;">Freelancer</h2>
+            <p style="margin-top: 0;">[Sep 24 - Present]</p>
+            <ul style="margin-top: 20px; max-width: 69%; list-style: disc;">
+              <li style="text-align: left;">
+                Integrated sensors (LiDAR, camera, IMU) and developed robust <strong>ROS2 nodes</strong> for a client's project, 
+                providing thorough documentation and support.
+              </li>
+              <li style="text-align: left;">
+                Built an advanced <strong>LSTM model</strong> for gold price forecasting using historical data, achieving 
+                <strong>97%</strong> accuracy.
+              </li>
+              <li style="text-align: left;">
+                Developed a <strong>biometric fish robot</strong> with <strong>ROS2</strong>, featuring 
+                <strong>SLAM navigation</strong> and efficient <strong>object detection</strong>.
+              </li>
+            </ul>                       
+          </div>
+        </div>
+        
+      </div>
+      <div class="bubbles-container"></div>
+    </section>
+    <hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

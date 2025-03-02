@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Asim Khan</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+  </head>
+<!-- ########################################################################        BODY         ################################################################################# -->
+  <body>
+    <nav id="desktop-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 100; height: 7vh;">
+      <div class="logo">Muhammad Asim Khan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Home</a></li>
+          
+          <li><a href="education.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Education</a></li>
+          
+          <li><a href="projects.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Projects</a></li>
+          
+          <li><a href="experience.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Experience</a></li>
+          
+          <li><a href="publications.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Publications</a></li>
+          
+          <li><a href="contact.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Contact</a></li>
+        </ul> 
+      </div>
+    </nav>
+    <nav id="hamburger-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 1000; height: 7vh;">
+      <div class="logo" style="font-size: medium;">Muhammad Asim Khan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Home</a></li>
+          <li><a href="education.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Education</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Projects</a></li>
+          <li><a href="experience.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Experience</a></li>
+          <li><a href="publications.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Publications</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- <div id="news-bar" style="background-color: lightgrey; color: #000; position: fixed; top: 7vh; width: 100%; z-index: 100; height: 3vh; text-align: center; font-size: 16px; overflow: hidden;">
+      <p><strong>Latest Update:</strong> Conference paper "Assistive Feeding System: Design and Evaluation" accepted to International Conference of Robotics and Automation in Industry (ICRAI) 2024</p>
+    </div> -->
+
+<!-- ########################################################################        Projects         ################################################################################### -->
+<section id="projects">
+  <div style="margin-top: 120px;">
+    <h1 class="title">Projects</h1>
+    <p class="section__text__p1">
+      I feel like every project is a dream project, so long as I'm learning something new.
+    </p>
+    <div class="project-filter-container" style="text-align: center; margin-top: 30px;">
+      <span>
+        <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">All</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('robotics')">AI & Robotics</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('embedded')">Embedded</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">Software</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('electronics')">Electronics</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card" data-category="software" onclick="showPopup('wordSearch')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/word-search.png" 
+          alt="Word Search Game" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Word Search Game</h3>
+        <p class="project-text">
+          Created a dynamic Word Search game in <strong>C++</strong> that generates a new grid each time, 
+          allows manual answer input, and supports word-finding from an uploaded file.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card" data-category="embedded" onclick="showPopup('alu')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/embedded/alu.png" 
+          alt="Arithmetic Logic Unit" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Arithmetic Logic Unit</h3>
+        <p class="project-text">
+          Built a 4-bit ALU in <strong>Proteus</strong> with hardware, performing logic operations, addition, subtraction, increment, decrement, counting, and comparison.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="project-card" data-category="software" onclick="showPopup('musicPlayer')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/music-player.png" 
+          alt="Music Player" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Music Player</h3>
+        <p class="project-text">
+          Built a <strong>C++</strong> music player with a graphical user interface (GUI), offering audio playback, playlist management, and control features.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 4 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('musicAmplifier')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/music-amplifier.png" 
+          alt="Audio Amplifier" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Audio Amplifier</h3>
+        <p class="project-text">
+          Built an audio amplifier in <strong>Proteus</strong> and hardware by cascading amplifier stages with a power circuit, achieving a gain from 10 mV to 6 V for enhanced audio output.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 5 -->
+    <div class="project-card" data-category="embedded" onclick="showPopup('tempControlledDcFan')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/embedded/temp-fan.png" 
+          alt="Temperature Controlled DC Fan" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Temperature Controlled DC Fan</h3>
+        <p class="project-text">
+          Built a temperature-controlled DC fan with an <strong>AVR</strong>, programmed in <strong>C</strong>, simulated in <strong>Proteus</strong>, and implemented on hardware with sensor-based control and <strong>LCD</strong> display.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 6 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('selfMetalDetector')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/self-detector.png" 
+          alt="Metal Detector (Self Induction)" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Metal Detector (Self)</h3>
+        <p class="project-text">
+          Designed a self-induction based metal detector in <strong>Proteus</strong> and hardware, utilizing coil inductance changes to detect metal objects. Achieved reliable detection.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 7 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('mutualMetalDetector')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/mutual-detector.png" 
+          alt="Metal Detector (Mutual Induction)" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Metal Detector (Mutual)</h3>
+        <p class="project-text">
+          Developed a mutual induction based metal detector in <strong>Proteus</strong> and hardware, using two coils to detect metal objects through changes in coil coupling.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 8 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('dcPowerSupply')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/power-supply.png" 
+          alt="DC Power Supply" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">DC Power Supply</h3>
+        <p class="project-text">
+          Built a robust DC power supply with standard AC input, providing a variable 0-24V output and a fixed 5V output for versatile electronic applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 9 -->
+    <div class="project-card" data-category="robotics" onclick="showPopup('motorPosControl')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/pos-control.png" 
+          alt="DC Motor Position Control" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">DC Motor Position Control</h3>
+        <p class="project-text">
+          Developed a DC motor position control system using an <strong>Arduino</strong>, implementing a <strong>PID</strong> controller based on motor data and a <strong>GUI</strong> for real-time control and monitoring.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 10 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('buckConverter')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/buck.png" 
+          alt="DC-DC Buck Converter" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">DC-DC Buck Converter</h3>
+        <p class="project-text">
+          Built a robust 15V to 6V DC-DC buck converter in simulation and hardware, using a modified <strong>PID</strong> controller and <strong>TL494</strong> for efficient <strong>PWM</strong> generation.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 11 -->
+    <div class="project-card" data-category="embedded" onclick="showPopup('microcontrollerFpga')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/embedded/risc-microcontroller.png" 
+          alt="RISC Microcontroller" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px;
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">RISC Microcontroller</h3>
+        <p class="project-text">
+          Implemented an 8-bit <strong>RISC</strong> microcontroller in <strong>Verilog</strong> using <strong>Quartus</strong>, with a complete <strong>RTL</strong> design and simulation in <strong>ModelSim</strong>, demonstrating robust instruction execution.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 12 -->
+    <div class="project-card" data-category="robotics" onclick="showPopup('semanticSeg')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/semantic-seg.png" 
+          alt="Semantic Segmentation" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Semantic Segmentation</h3>
+        <p class="project-text">
+          Trained a <strong>U-Net CNN</strong> model for semantic segmentation on the <strong>CamVid</strong> dataset, adding custom-labeled images using <strong>MATLAB</strong> for improved accuracy.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 13 -->
+    <div class="project-card" data-category="software" onclick="showPopup('audioEqualizer')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/audio-equalizer.png" 
+          alt="Audio Equalizer" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Audio Equalizer</h3>
+        <p class="project-text">
+          Built a <strong>5-band</strong> audio equalizer in <strong>MATLAB</strong> with an intuitive <strong>GUI</strong>, enabling real-time control and visualization of audio frequency adjustments.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 14 -->
+    <div class="project-card" data-category="software" onclick="showPopup('eegFiltering')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/eeg-filter.png" 
+          alt="EEG Data Cleaning" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">EEG Data Cleaning</h3>
+        <p class="project-text">
+          Processed EEG data using notch, high-pass, low-pass, and band-pass filters in <strong>MATLAB</strong> to eliminate noise and performed analysis of frequency bands (e.g., alpha, beta).
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 15 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('antenna')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/antenna.png" 
+          alt="Antenna" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Antenna</h3>
+        <p class="project-text">
+          Built a <strong>2.4 GHz</strong> RF antenna with a square patch and quarter-wave transformer, achieving <strong>3.12 dBi</strong> gain and <strong>56.7 MHz</strong> bandwidth. Simulated in <strong>ANSYS</strong> and PCB.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 16 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('receiver')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/receiver.png" 
+          alt="Receiver" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">RF Receiver</h3>
+        <p class="project-text">
+          Developed a <strong>2.4 GHz</strong> RF receiver that captures signals from a transmitter and plays audio, utilizing commonly used RF frequencies for reliable performance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 17 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('transformer')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/transformer.png" 
+          alt="Tranformer" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Transformer</h3>
+        <p class="project-text">
+          Built a <strong>center-tapped</strong> transformer that converted standard AC input into dual outputs of <strong>24V</strong> and <strong>12V</strong> for versatile power applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 18 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('bms')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/electronics/bms.png" 
+          alt="Battery Management System" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Battery Management System</h3>
+        <p class="project-text">
+          Developed a Battery Management System <strong>(BMS)</strong> using <strong>Arduino</strong> and <strong>sensors</strong> that monitors voltage, current, temperature, and battery health, displaying data on an <strong>LCD</strong>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================================== Popup for Case Study ================================================= -->
+  <div class="popup-overlay" id="wordSearch">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('wordSearch')">&times;</span>
+      <h2>Word Search Game</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="alu">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('alu')">&times;</span>
+      <h2>Arithmetic Logic Unit</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="musicPlayer">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('musicPlayer')">&times;</span>
+      <h2>Music Player</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="musicAmplifier">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('musicAmplifier')">&times;</span>
+      <h2>Audio Amplifier</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="tempControlledDcFan">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('tempControlledDcFan')">&times;</span>
+      <h2>Temperature Controlled DC Fan</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="selfMetalDetector">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('selfMetalDetector')">&times;</span>
+      <h2>Metal Detector (Self Induction)</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="mutualMetalDetector">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('mutualMetalDetector')">&times;</span>
+      <h2>Metal Detector (Mutual Induction)</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="dcPowerSupply">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('dcPowerSupply')">&times;</span>
+      <h2>DC Power Supply</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="motorPosControl">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('motorPosControl')">&times;</span>
+      <h2>DC Motor Position Control</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="buckConverter">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('buckConverter')">&times;</span>
+      <h2>DC-DC Buck Converter</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="microcontrollerFpga">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('microcontrollerFpga')">&times;</span>
+      <h2>RISC Microcontroller</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="semanticSeg">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('semanticSeg')">&times;</span>
+      <h2>Semantic Segmentation</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="audioEqualizer">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('audioEqualizer')">&times;</span>
+      <h2>Audio Equalizer</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="eegFiltering">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('eegFiltering')">&times;</span>
+      <h2>EEG Data Cleaning</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="antenna">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('antenna')">&times;</span>
+      <h2>Antenna</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="receiver">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('receiver')">&times;</span>
+      <h2>RF Receiver</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="transformer">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('transformer')">&times;</span>
+      <h2>Transformer</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="bms">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('bms')">&times;</span>
+      <h2>Battery Management System</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="bubbles-container"></div>
+</section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

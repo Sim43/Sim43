@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Asim Khan</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+  </head>
+<!-- ########################################################################        BODY         ################################################################################# -->
+  <body>
+    <nav id="desktop-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 100; height: 7vh;">
+      <div class="logo">Muhammad Asim Khan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Home</a></li>
+          
+          <li><a href="education.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Education</a></li>
+          
+          <li><a href="projects.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Projects</a></li>
+          
+          <li><a href="experience.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Experience</a></li>
+          
+          <li><a href="publications.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Publications</a></li>
+          
+          <li><a href="contact.html" style="color: white; font-weight: normal; font-size: 17px;" 
+            onmouseover="this.style.fontWeight='bold'; this.style.fontSize='20px'" 
+            onmouseout="this.style.fontWeight='normal'; this.style.fontSize='17px'">Contact</a></li>
+        </ul> 
+      </div>
+    </nav>
+    <nav id="hamburger-nav" style="background-color: black; color: white; position: fixed; top: 0; width: 100%; z-index: 1000; height: 7vh;">
+      <div class="logo" style="font-size: medium;">Muhammad Asim Khan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Home</a></li>
+          <li><a href="education.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Education</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Projects</a></li>
+          <li><a href="experience.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Experience</a></li>
+          <li><a href="publications.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Publications</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" style="color: black; font-size: medium;">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- <div id="news-bar" style="background-color: lightgrey; color: #000; position: fixed; top: 7vh; width: 100%; z-index: 100; height: 3vh; text-align: center; font-size: 16px; overflow: hidden;">
+      <p><strong>Latest Update:</strong> Conference paper "Assistive Feeding System: Design and Evaluation" accepted to International Conference of Robotics and Automation in Industry (ICRAI) 2024</p>
+    </div> -->
+<!-- ########################################################################        Education         ################################################################################### -->
+    <section id="education">
+      <div style="margin-top: 120px;">
+        <h1 class="title">Education</h1>
+      </div>
+      <div class="education-details-container" style="display: flex; flex-direction: column; gap: 20px;">
+        
+        <!-- University Name - Degree -->
+        <div class="about-containers">
+          <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://nust.edu.pk/" target="_blank">
+              <img src="./assets/images/nust.png" alt="NUST" class="icon" style="width: 100px; height: 100px;" />
+            </a>
+            <h2 class="education-sub-title" style="margin-bottom: 0;">BS Electrical Engineering</h2>
+            <p style="margin-top: 0;">National University of Sciences and Technology<br>[Graduation: May 25]</p>
+            <ul style="margin-top: 30px; list-style-type: none;">
+              <li style="text-align: center; margin-bottom: 5px;"><strong>Final Year Project:</strong> Reinforcement Learning Based Planning For Self Driving Car</li>
+            </ul>
+            <div class="award-container" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+              <img src="./assets/images/award.png" alt="Award Icon" style="width: 30px; margin-right: 5px;" />
+              <p style="margin: 0; text-align: left;"><strong>High Achiever (4 Times):</strong> Awarded for securing SGPA of >=3.5</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- University Name - Degree -->
+        <div class="about-containers">
+          <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://fgssc.edu.pk/" target="_blank">
+              <img src="./assets/images/fg.png" alt="FG Rawalpindi" class="icon" style="width: 100px; height: 100px;" />
+            </a>
+            <h2 class="education-sub-title" style="margin-bottom: 0; text-align: center;">Pre-Engineering</h2>
+            <p style="margin-top: 0; text-align: center;">F.G. Sir Syed College, Rawalpindi<br>[Graduation: Aug 21]</p>
+            <ul style="margin-top: 20px; list-style-type: none;">
+              <li style="text-align: center;"><strong>Score:</strong> 90%</li>
+              <li style="text-align: center;"><strong>Subjects:</strong> Maths, Physics & Chemistry</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="bubbles-container"></div>
+    </section>
+    <hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
