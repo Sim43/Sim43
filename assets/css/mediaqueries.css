@@ -109,6 +109,7 @@
   .contact-info-container p {
     font-size: 1rem; /* Adjust font size for better readability */
     text-align: center; /* Center text */
+    margin-bottom: 20px;
   }
 
   /* Adjusting margins for the entire section */
