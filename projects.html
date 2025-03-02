@@ -480,6 +480,138 @@
       </div>
     </div>
 
+    <!-- Project Card 19 -->
+    <div class="project-card" data-category="robotics" onclick="showPopup('fishRobot')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/fish.png" 
+          alt="Biometric Fish Robot" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Biometric Fish Robot</h3>
+        <p class="project-text">
+          Built a <strong>biometric fish robot</strong> in <strong>ROS 2 Jazzy</strong> with <strong>Gazebo</strong> and <strong>RVIZ</strong>, integrating <strong>LiDAR</strong>, <strong>camera</strong>, <strong>IMU</strong>, and <strong>SLAM</strong> for autonomous navigation and control.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 20 -->
+    <div class="project-card" data-category="robotics" onclick="showPopup('laneVehicleDetection')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/lane-vehicle-detection.png" 
+          alt="Lane and Vehicle Detection" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Lane & Vehicle Detection</h3>
+        <p class="project-text">
+          Tested a <strong>YOLOv8</strong> model for lane and vehicle detection, achieving accurate real-time object recognition and tracking utilizing <strong>CV</strong> techniques.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 21 -->
+    <div class="project-card" data-category="software" onclick="showPopup('coolPythonTools')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/tools.png" 
+          alt="Tools Website" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Tools Website</h3>
+        <p class="project-text">
+          Built a dynamic website showcasing <strong>Cool Python tools</strong>, featuring an interactive and user-friendly interface for exploring various utilities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 22 -->
+    <div class="project-card" data-category="robotics" onclick="showPopup('turtleSim')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/turtle.png" 
+          alt="TurtleSim ROS2" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">TurtleSim ROS2</h3>
+        <p class="project-text">
+          Built a <strong>ROS 2</strong>  project using <strong>Turtlesim</strong>, featuring robotic control, random movement, teleportation, and catching other turtles.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Project Card 23 -->
+    <div class="project-card" data-category="software" onclick="showPopup('bloggingSite')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/software/blog.png" 
+          alt="Blogging Website" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">Blogging Website</h3>
+        <p class="project-text">
+          Built a dynamic <strong>blogging website</strong> using <strong>Flask</strong>, featuring <strong>user accounts database</strong>, post creation, editing, and a user-friendly interface.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Card 24 -->
+    <div class="project-card" data-category="software" onclick="showPopup('selfCar2D')">
+      <div class="project-border">
+        <img 
+          src="./assets/images/projects/robotics/self-car.png" 
+          alt="2D Self Driving Car" 
+          class="project-img" 
+          style="
+            height: 180px; 
+            width: 200px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-top: 20px;
+          "
+        />
+        <h3 class="project-title">2D Self Driving Car</h3>
+        <p class="project-text">
+          Developed a 2D <strong>self-driving car</strong> using <strong>PPO reinforcement learning</strong>, trained in the <strong>Gym CarRacing</strong> environment for autonomous navigation and decision-making.
+        </p>
+      </div>
+    </div>
+
   </div>
 
   <!-- ================================== Popup for Case Study ================================================= -->
@@ -716,6 +848,72 @@
       </div> -->
     </div>
   </div>
+
+  <div class="popup-overlay" id="turtleSim">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('turtleSim')">&times;</span>
+      <h2>TurtleSim ROS2</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="coolPythonTools">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('coolPythonTools')">&times;</span>
+      <h2>Tools Website</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="fishRobot">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('fishRobot')">&times;</span>
+      <h2>Biometric Fish Robot</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="bloggingSite">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('bloggingSite')">&times;</span>
+      <h2>Blogging Website</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="selfCar2D">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('selfCar2D')">&times;</span>
+      <h2>2D Self Driving Car</h2>
+      <p>Details coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
 
   <div class="bubbles-container"></div>
 </section>
