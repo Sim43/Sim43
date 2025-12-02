@@ -1,5 +1,5 @@
 # 💫 Muhammad Asim Khan
-📖 I'm an Electrical Engineer @ NUST CEME<br>⚡ I am Passionate about Machine Leanring, Robotics and Embedded Systems ヾ(≧ ▽ ≦)ゝ<br>🔭 I’m looking forward to collaborate on anything I find interesting<br>🎥 I Love movies
+📖 I'm an Electrical Engineer @ NUST CEME<br>⚡ I am Passionate about AI, Robotics and Embedded Systems ヾ(≧ ▽ ≦)ゝ<br>🔭 I’m looking forward to collaborate on anything I find interesting<br>🎥 I Love movies
 
 
 ## 🌐 Socials:
